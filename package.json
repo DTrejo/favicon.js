@@ -4,6 +4,14 @@
   "version": "0.0.1",
   "homepage": "https://github.com/DTrejo/favicon.js",
   "author": "David Trejo <dtrejo@cs.brown.edu> (http://dtrejo.com/)",
+  "keywords": ["favicon", "favicon.js", "scraper", "url"],
+  "dependencies": {
+    "jsdom": ">= 0.1.20",
+    "request": ">= 0.10.0",
+    "http-agent": ">= 0.1.0",
+    "jquery": "",
+    "async":"0.1.6"
+  },
   "main": "favicon",
   "directories": {
     "lib": ""
