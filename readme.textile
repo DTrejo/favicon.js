@@ -2,18 +2,29 @@ h1. favicon.js helps get any site's favicon URL
 
 h2. installation?
 
-<code>npm install favicon</code>
+<code>git clone git@github.com:DTrejo/favicon.js.git
+cd favicon.js
+npm install</code>
 
-(you must "install npm":https://github.com/isaacs/npm first)
+("npm install guide":https://github.com/isaacs/npm)
 
 h2. how do I use it?
 
-<code>favicon dtrejo.com</code>
+<code>$ favicon google.com amazon.com github.com
+http://google.com/favicon.ico
+http://amazon.com/favicon.ico
+http://github.com/favicon.ico
+</code>
 
 h2. how do I use it with my code?
 
 <code>var favicon = require('favicon');
-var icon = favicon.get('dtrejo.com');</code>
+var icon = favicon.get('dtrejo.com', function(err, url){
+  console.log(url);
+});</code>
+
+Note that at the moment it will return http://dtrejo.com/favicon.png if it cannot find a given site's favicon in any of the normal places.
+I should probably change this.
 
 h2. heritage?
 
