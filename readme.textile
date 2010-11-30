@@ -8,7 +8,7 @@ h2. installation?
 
 h2. how do I use it?
 
-<code>./favicon dtrejo.com</code>
+<code>favicon dtrejo.com</code>
 
 h2. how do I use it with my code?
 

@@ -16,6 +16,7 @@
   "directories": {
     "lib": ""
   },
+  "bin" : { "favicon" : "./cli.js" },
   "scripts": {
     "test": "node test.js"
   },
@@ -23,4 +24,3 @@
     "node": ">=0.2.0"
   }
 }
-

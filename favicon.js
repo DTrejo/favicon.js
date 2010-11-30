@@ -68,7 +68,7 @@ favicon.get = function(url, callback) {
         } 
       }
       // if it got through all the urls, then just return my own sites favicon url
-      callback(null, 'http://dtrejo.com/favicon.xyz');
+      callback(null, 'http://dtrejo.com/favicon.png');
       agent.stop();
     });
   
