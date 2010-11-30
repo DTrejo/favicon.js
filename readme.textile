@@ -2,26 +2,26 @@ h1. favicon.js helps get any site's favicon URL
 
 h2. installation?
 
-<code>git clone git@github.com:DTrejo/favicon.js.git
+<pre>git clone git@github.com:DTrejo/favicon.js.git
 cd favicon.js
-npm install</code>
+npm install</pre>
 
 ("npm install guide":https://github.com/isaacs/npm)
 
 h2. how do I use it?
 
-<code>$ favicon google.com amazon.com github.com
+<pre>$ favicon google.com amazon.com github.com
 http://google.com/favicon.ico
 http://amazon.com/favicon.ico
 http://github.com/favicon.ico
-</code>
+</pre>
 
 h2. how do I use it with my code?
 
-<code>var favicon = require('favicon');
+<pre>var favicon = require('favicon');
 var icon = favicon.get('dtrejo.com', function(err, url){
   console.log(url);
-});</code>
+});</pre>
 
 Note that at the moment it will return http://dtrejo.com/favicon.png if it cannot find a given site's favicon in any of the normal places.
 I should probably change this.
@@ -30,7 +30,7 @@ h2. heritage?
 
 favicon.js is a Javascript/node.js port of "braveicon":https://github.com/bmelton/Braveicon/tree/master by "bmelton":https://github.com/bmelton.
 
-<quote>Fetches a site's favicon URL.  Respects link rel="" declarations
+<quote><pre>Fetches a site's favicon URL.  Respects link rel="" declarations
 most importantly, per W3C spec, however, it favors 'shortcut icon'
 over /favicon.ico, as many software packages explicitly declare
-via shortcut icon, and W3C snubs /favicon.ico, generally speaking<quote> &mdash; "bmelton":https://github.com/bmelton
+via shortcut icon, and W3C snubs /favicon.ico, generally speaking</pre>&mdash; "bmelton":https://github.com/bmelton<quote>
